@@ -67,5 +67,7 @@ var index = savedEvent.findIndex(function(event) {
   
   // Store the updated savedEvent array in local storage
   localStorage.setItem("saved", JSON.stringify(savedEvent));
-  
 }
+
+// Use event delegation to save text when save icon is clicked
+container.on("click", ".saveBtn i", saveEvent);
