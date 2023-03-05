@@ -39,3 +39,16 @@ timeBlocks.each(function() {
     description.addClass("future");
   }
 });
+
+// Function for saving text to local storage
+function saveEvent(event) {
+    var description = $(event.target).closest('.time-block').find('.description textarea');
+    var eventDescription = description.val();
+    var hourEvent = $(event.target).closest('.time-block').attr("id");
+    var savedEvent = JSON.parse(localStorage.getItem("saved")) || [];
+    var saved = {
+      hour: hourEvent,
+      text: eventDescription
+    };
+
+}
