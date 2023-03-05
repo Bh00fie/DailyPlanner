@@ -21,3 +21,7 @@ function localStorageEvents() {
 }
 
 localStorageEvents();
+
+// Using moment.js, get current day data and show in specific format
+var today = moment();
+$('#currentDay').text(today.format("dddd, Do MMMM YYYY"));
