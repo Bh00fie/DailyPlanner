@@ -25,3 +25,17 @@ localStorageEvents();
 // Using moment.js, get current day data and show in specific format
 var today = moment();
 $('#currentDay').text(today.format("dddd, Do MMMM YYYY"));
+
+// Targets all Rows and check each against the current time
+var currentTime = moment().hour();
+timeBlocks.each(function() {
+  var description = $(this).find('.description');
+  var selectedTime = parseInt($(this).attr("id"));
+  if (selectedTime === currentTime) {
+    description.addClass("present");
+  } else if (selectedTime < currentTime) {
+    description.addClass("past");
+  } else if (selectedTime > currentTime) {
+    description.addClass("future");
+  }
+});
