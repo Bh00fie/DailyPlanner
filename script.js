@@ -51,4 +51,21 @@ function saveEvent(event) {
       text: eventDescription
     };
 
+// Find the index of the saved event in the savedEvent array that has the same hour as the current saved event.
+var index = savedEvent.findIndex(function(event) {
+    return event.hour === saved.hour;
+  });
+  
+  // If the saved event already exists in the savedEvent array, replace the existing event with the new one.
+  if (index >= 0) {
+    savedEvent[index] = saved;
+  } 
+  // Otherwise, if the saved event doesn't exist in the savedEvent array, add the new event to the end of the array.
+  else {
+    savedEvent.push(saved);
+  }
+  
+  // Store the updated savedEvent array in local storage
+  localStorage.setItem("saved", JSON.stringify(savedEvent));
+  
 }
