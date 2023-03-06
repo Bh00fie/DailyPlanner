@@ -2,32 +2,32 @@
 
 ## Introduction
 
-Webpage deployed at: https://bh00fie.github.io/Code-Quiz/
+Webpage deployed at: https://bh00fie.github.io/DailyPlanner/
 
-In this challenge, I'll be using the concepts I've learned in the last weeks to complete the required activity.
-In this project, I'll be creating an quiz that runs in the browser and features dynamically updated HTML and CSS, all powered by JavaScript code that I will have to write. The app has a clean and polished user interface that is responsive and I have ensured that it adapts to multiple screen sizes.
-
-This project consists to create an interactive timed coding quiz with multiple-choice questions.
-
----
+In this challenge, I'll be creating a simple calendar application that allows a user to save events for each hour of the day by modifying the starter code given to me and using the concepts I've learned in the few last weeks.
+In this project, I'll be creating a calendar that will show the current day (using Moment.js) and that allows the user to store hourly notes when clicking the save button.
 
 ## Description
 
-This is a particular timed multiple-choice coding quiz, the user will have 75 seconds to answer all questions, if he manages to do so, he final score will be shown and he will have the change to put his name to store the score. If user answer incorrectly, 10 seconds will be taken off the time, and if the timer runs out the game will end. The user's final score is the number of seconds left on the clock when the game ends.
+The app should:
+- Display the current day at the top of the calendar when a user opens the planner. 
+- Present time blocks for standard business hours when the user scrolls down.
+- Color-code each time block based on past, present, and future when the time block is viewed.
+- Allow a user to enter an event when they click a time block.
+- Save the event in local storage when the save button is clicked in that time block.
+- Persist events between refreshes of a page.
 
 JS file has been commented on to help understand written code if interested in looking into it more in-depth.
 
-The code has been deployed on the following webpage: https://bh00fie.github.io/Code-Quiz/
+The code has been deployed on the following webpage: https://bh00fie.github.io/DailyPlanner/
 
 ## Final Results
 When you open your code in the browser my resulting quiz should look similar to the following:
 
 - Result:
 
-![Intro](assets/images/start.jpg)
-![Quiz](assets/images/Quiz.jpg)
-![Score](assets/images/score.jpg)
-![Highscore](assets/images/Results.jpg)
+![Planner](assets/images/calendar.jpg)
+
 
 ---
 
