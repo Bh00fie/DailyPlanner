@@ -22,11 +22,9 @@ JS file has been commented on to help understand written code if interested in l
 The code has been deployed on the following webpage: https://bh00fie.github.io/DailyPlanner/
 
 ## Final Results
-When you open your code in the browser my resulting quiz should look similar to the following:
+When you open your code in the browser my resulting Daily Planner should look similar to the following:
 
-- Result:
-
-![Planner](assets/images/calendar.jpg)
+![Planner](images/calendar.png)
 
 
 ---
